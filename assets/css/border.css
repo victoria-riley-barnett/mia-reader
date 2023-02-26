@@ -1,0 +1,40 @@
+/*
+ * Do not edit directly.
+ * This file is built from source code hosted at
+ * http://www.github.com/marxists-org/stylesheets.
+ * Instructions to build and/or contribute can be found there.
+ * 
+ * Current maintained by Philip Mooney <philipm@marxists.org>.
+ */
+
+@import url("works.css");
+
+body {
+  background: #333355;
+}
+
+div.border {
+  width: auto;
+  border: 0.5em solid #999999;
+}
+
+
+/* TODO: consider bringing this up to works.css */
+
+blockquote {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+/* Path to the document */
+
+p.title {
+  color: #999999;
+  font-family: "Arial", sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  margin: 1%;
+  text-align: left;
+  text-indent: 0em;
+}

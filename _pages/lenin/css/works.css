@@ -1,0 +1,1006 @@
+/* ===================================================           */
+/* All Documents                                                 */
+/*                                                               */
+/* Version 6.5                                                   */
+/* Sept 27, 2007                                                 */
+/*                                                               */
+/* by Brian Baggins, David Walters (Mar 1999),                    */ 
+/*    & Kevin Goins (2007)                                       */
+/*     http://www.marxists.org/archive/css/                      */
+/* ===================================================           */
+/* Introduction to this stylesheet:                              */
+/* The intention of this sheet is to serve as the primary 
+source for all documents on this archive.  It is not 
+meant to be exhaustive nor cater to every style, but to
+serve every primary need in as diverse a range of 
+documents and possible uses, while at the same time 
+being as basic, malleable and versatile as possible.             */
+                                 
+/* =====================================*/
+/* Imports FIRST!                       */
+/* WARNING: use extension ".css".       */
+/* =====================================*/
+
+/* Disabled per David s request: @import url(i-ahover.css); */
+
+                                  
+/* =====================================*/
+/* General                                */
+/* =====================================*/
+
+html {
+ font-family: "Times New Roman", serif;
+}
+
+body { 
+    background: white; 
+    color: black; 
+    margin: 1.0em; 
+    line-height: 150%;  /* move here from p */
+    height: 8.5in
+}
+
+a:link { color: #aa0000; background: transparent }
+
+/* 2003.11.01: Removed  background:transparent when a:hover added w/ background. */
+a:visited { color: #993333; background: transparent }
+
+img.right { float: right; margin: 2em; }
+img.left { float: left; margin: 2em; }  
+img.center { display: block; margin: auto; }
+
+hr.section { width: 44%; height: 1px; }
+hr.section2 { width: 75%; height: 4px; }
+hr.base { width: 92%; height: 1px; }
+hr.end { width: 82%; height: 1px; }
+hr.half { width: 50%; height: 1px; }
+hr { width: 88%; height: 1px; }
+
+blockquote { 
+    margin-left: 9%;
+    line-height: 110%;
+}
+
+
+/* =====================================*/
+/* Document Headers					    */
+/* =====================================*/
+
+/* Document Title */
+H1 {
+ background:    #FFFFFF;
+ color:         #330000;
+ font-weight:   bold;
+ line-height:   120%;  /* missing until 2003.11.12 */
+ font-size:     32pt;
+ font-family: "Hoefler Text", "Century Schoolbook", "Times New Roman", serif;
+ text-align:    center;
+ margin-left:   36px;
+ margin-right:  36px;
+}
+
+/* Author s name */
+H2 {
+ background: transparent;
+ color: #330000; 
+ font-weight: bold;
+  line-height: 120%;
+ text-align: center;
+ font-family: "Century Schoolbook", "Hoefler Text", "Times New Roman", serif;
+ font-size: 20pt; 
+ margin-left: 36px;
+ margin-right: 36px;
+ }
+
+/* Chapter Title */
+span.h3small { font-size: 14pt; }
+H3 {
+ background: transparent;
+ color: #330000; 
+ font-weight: bold;
+  line-height: 120%;
+ text-align: center;
+ font-family: "Century Schoolbook", "Hoefler Text", "Times New Roman", serif;
+ font-size: 22pt; 
+ margin-left: 36px;
+ margin-right: 36px;
+ }
+ 
+/* Section Title */
+H4 {
+ background: transparent;
+ color: #330000; 
+ font-weight: bold;
+ text-align: center;
+ font-family: "Century Schoolbook", "Hoefler Text", "Times New Roman", serif;
+ font-size: 14pt;  
+ line-height: 120%;
+ margin-left: 36px;
+ margin-right: 36px;
+ }
+ 
+/* Sub Section 2 */
+H5 {
+ background: transparent;
+ color: #330000; 
+ font-weight: bold;
+ text-align: center;
+ font-family: "Century Schoolbook", "Hoefler Text", "Times New Roman", serif;
+ font-size: 12pt;  
+ line-height: 175%;
+ margin-left: 8%;
+ margin-right: 8%;
+ }
+ 
+/* Sub Section 3 */
+H6 {
+ background: transparent;
+ color: #330000; 
+ font-weight: bold;
+ text-align: left;
+ font-family: "Century Schoolbook", "Hoefler Text", "Times New Roman", serif;
+ font-size: 14pt;  
+ line-height: 175%;
+  line-height: 150%;
+ margin-left: 6%;
+ margin-right: 6%;
+ }
+
+ 
+/* =====================================*/
+/* Spanners							    */
+/* =====================================*/
+
+/* ~~~~~~~ Footnotes ~~~~~~~~~~~~~~~~~~ */
+
+/* Author s */
+sup.anote {
+ background: transparent;
+ color: #330000; 
+ font-family: "Times", serif;
+ font-size: 8pt;
+ font-weight: bold;
+ text-decoration: none;
+ }
+ 
+/* Editor s */
+sup.ednote {
+ background: transparent;
+ color: #330000; 
+ font-family: "Courier New", monospace;
+ font-size: 8pt;
+ font-weight: normal;
+ text-decoration: none;
+ }
+ 
+/* Editorial notes in text */
+span.inote {
+ background: transparent;
+ color: #666666; 
+ font-size: 10pt;
+ font-weight: normal;
+ }
+ 
+/* ~~~~~~~ Misc ~~~~~~~~~~~~~~~~~~ */
+em { 
+    word-spacing: 0.2em 
+    }
+
+em.stretch {
+    letter-spacing: 0.2em;
+    font-style: italic;
+    word-spacing: 0.1em
+    }
+
+em.boldem {
+    font-style: italic;
+    font-weight: bold;
+    }    
+    
+em.boldstretch {
+    letter-spacing: 0.2em;
+    font-style: italic;
+    font-weight: bold;
+    word-spacing: 0.1em
+    }
+
+b.stretch {
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    word-spacing: 0.1em
+    }
+
+.stretch {
+    letter-spacing: 0.2em;
+    font-style: normal;
+    word-spacing: 0.1em
+    }
+
+/* Used in the info block */
+span.info {
+ background: transparent;
+ color: #330000; 
+ font-family: "Arial", sans-serif;
+ font-size: 12pt;
+ font-weight: bold;
+ /* text-indent: -8%; some web browser ignores this! */
+}
+
+
+/* indiscreet text (primarily for dates) */
+span.date {
+ background: transparent;
+ color: #333333;
+ font-family: "Arial", sans-serif;
+ font-size: small;
+ font-weight: normal;
+ }
+
+span.infobloc_copyleft {
+ font-size: 11pt;
+ }
+
+/* Used for notes in the text 			*/
+/* Also to bold book titles in p.index  */
+span.term {
+ background: transparent;
+ color: #330000; 
+ font-family: "Arial", sans-serif;
+ font-size: 12pt;
+ font-weight: bold;
+}
+
+/* abstracts */
+span.context { color: #333333; }
+
+/*Greek text */
+span.greek { font-family: symbol }
+
+/* =====================================*/
+/* Paragraphs							*/
+/* =====================================*/
+
+/*----------------------------------*/
+/* Standard elements                */
+/*----------------------------------*/
+
+/* Basic p */
+p {
+ text-indent: 1em;
+ font-size: 12pt;
+ text-align: justify;
+  font-family: "georgia", serif;
+ line-height: 150%;
+ margin-left: 6%;     /* some web browser... */
+ margin-right: 6%;    /* some web browser... */
+ /* margin-left: +6%;  some web browser... */
+ /* margin-right: +6%; some web browser... */
+ }
+ 
+/* Basic p -- without first line indent */
+p.fst {
+ text-indent: 0em;
+ font-size: 12pt;
+ text-align: justify;
+ line-height: 150%;
+ margin-left: 6%;
+ margin-right: 6%;
+ }
+
+p.fst-r {
+ text-indent: 2em;
+ font-size: 12pt;
+ text-align: right;
+ line-height: 150%;
+ margin-left: 6%;
+ margin-right: 9%;
+ }
+
+p.narrow { 
+ text-indent: 0em;
+ font-size: 12pt;
+ line-height: 150%;
+ text-align: justify;
+ margin-left: 12%;
+ margin-right: 12%;
+}
+
+ 
+p.sub { color: black;
+ font-weight: bold;
+ font-size: 16pt;
+ text-align: center }
+
+/*----------------------------------*/
+/* Quote elements 					*/
+/*----------------------------------*/
+
+/* Standard Quote */
+p.quote { 
+ text-indent: 1em;
+ font-size: 11pt;
+ line-height: 125%;
+ text-align: justify;
+ margin-left: 9%;
+ margin-right: 9%;
+}
+
+/* Quote without first line indent */
+p.quoteb { 
+ text-indent: 0em;
+ font-size: 10pt;
+ line-height: 150%;
+ text-align: justify;
+ margin-left: 12%;
+ margin-right: 12%;
+}
+
+/* Sub Quote C (increased margin) */
+p.quotec { 
+ text-indent: 0em;
+ font-size: 10pt;
+ line-height: 150%;
+ text-align: justify;
+ margin-left: 16%;
+ margin-right: 16%;
+}
+
+/* Negative indent for number list */
+p.quote-list { 
+ text-indent: -1em;
+ font-size: 10pt;
+ line-height: 150%;
+ text-align: justify;
+ margin-left: 14%;
+ margin-right: 14%;
+}
+
+/* Citation (Quote citied) */
+p.inline {
+ background: transparent;
+ color: #666666; 
+ text-indent: 0em;
+ font-family: "Arial", sans-serif;
+ font-size: x-small;
+ text-align: right;
+ margin-left: 20%;
+ margin-right: 8%;
+ }
+
+ 
+/* Text for Endnotes/Footnotes */
+p.endnote { 
+ text-indent: 0em;
+ font-size: 11pt;
+ line-height: 110%;
+ text-align: justify;
+ margin-left: 9%;
+ margin-right: 9%;
+}
+
+/*----------------------------------*/
+/* Index elements 					*/
+/*----------------------------------*/
+
+/* Table of Contents */
+p.toc {
+ background: transparent;
+ color: #330000; 
+ text-indent: 0em;
+ font-weight: bold;
+ font-family: "Helvetica", sans-serif;
+ font-size: 12pt;
+ line-height: 100%;
+ text-align: left;
+ margin-left: 7%;
+ margin-right: 7%;
+}
+
+/* Basic Index */
+p.index { 
+ text-indent: 0em;
+ font-family: "Helvetica", sans-serif;
+ font-size: 12pt;
+ font-weight: bold;
+ text-align: left;
+ line-height: 200%;
+ margin-left: 9%;
+ margin-right: 9%;
+}
+
+
+/*----------------------------------*/
+/* Indented Text                    */
+/*----------------------------------*/
+
+/* Standard Indent */
+p.indent { 
+ text-indent: 1em;
+ font-size: 12pt;
+ line-height: 150%;
+ text-align: justify;
+ margin-left: 12%;
+ margin-right: 12%;
+}
+
+/* Indent without first line indent */
+p.indentb { 
+ text-indent: 0em;
+ font-size: 12pt;
+ text-align: justify;
+ line-height: 150%;
+ margin-left: 12%;
+ margin-right: 12%;
+}
+
+/* Sub Indent C (increased margin) */
+p.indentc { 
+ text-indent: 0em;
+ font-size: 12pt;
+ text-align: justify;
+ margin-left: 16%;
+ line-height: 150%;
+ margin-right: 16%;
+}
+
+/* Negative indent for number list */
+p.indent-list { 
+ text-indent: -1em;
+ font-size: 12pt;
+ text-align: justify;
+ line-height: 150%;
+ margin-left: 12%;
+ margin-right: 12%;
+}
+
+
+/*----------------------------------*/
+/* Table elements 					*/
+/*----------------------------------*/
+
+/* -- For Numbered Data -- */
+/* Example: */
+/* http://www.marxists.org/history/ussr/subject/stats/index.htm */
+
+table { margin-left: 10%; margin-right: 10%; background: #eeeeee; }
+
+table.t2h-foot { 
+    margin-left: 1%; 
+    margin-right: 1%; 
+    background: #eeeeee; 
+    }
+
+table.center { 
+	margin-left: 5%; 
+	margin-right: 5%; 
+	background: #ffffff;
+	border: 0pt;
+	text-indent:  0em;
+	text-align: center;
+	font-size:    10pt;
+	line-height:  60%;
+    }
+
+table.infobloc {
+    border-spacing: 4pt;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #eeeeee;
+    text-indent:  0em;
+    font-size:    11pt;
+    line-height:  115%;
+    border: outset 2pt;
+    text-align:   left;
+    }
+
+table.white {
+    background: #ffffff; 
+    margin-left: 10%; 
+    margin-right: 10%; 
+    }    
+
+table.black {
+    background: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color: #000000;
+    border-style: solid;
+    }
+
+table.box { 
+    background: #ffffff;
+	border: 1px;
+    border-color: #eeeeee;
+    border-style: ridge;
+	text-align: center;
+    }    
+        
+/* DELETE table.info WHEN ALL HTML UPDATED: */
+table.info {
+  border-spacing: 4pt;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #eeeeee;
+    text-indent:  0em;
+    font-size:    11pt;
+    line-height:  115%;
+    border: outset 2pt;
+    text-align:   left;
+    }
+
+td.reg { border: outset 1pt;
+ border-collapse: separate;
+ border-spacing: 1pt;
+ padding: 6px;
+}
+
+td.data {
+ background: transparent;
+ font-family: "Georgia", serif, monospace;
+ font-size: 12pt;
+ text-align: justify;
+ }
+
+table.data {
+ background: #eeeeee;
+ font-family: "Times", monospace;
+ font-size: 10pt;
+  text-align: justify;
+ }
+
+table.reg {
+ margin-left: 10%;
+ margin-right: 10%;
+ background: #eeeeee; 
+}
+
+table.t2h-toc {
+ margin-left: 10%;
+ margin-right: 10%;
+ background: #eeeeee; 
+}
+
+
+/* Column Headings */ 
+td.head {
+ background: #999999;
+ font-weight: bold;
+ text-align: center;
+ font-size: 12pt;
+ }
+
+/* Row Colors */
+tr.alt { background: #cccccc; }
+tr.total { background: #ffcccc; }
+tr.totalb { background: #ff9999; }
+
+tr.shade { background: #d0d0d0
+}
+
+/* -- For Book Indexes -- */
+/* Example: */
+/* http://www.marxists.org/archive/lenin/works/1917/sep/statrev/index.htm */
+
+td.shade { background: #d0d0d0
+}
+
+
+td.index {
+ background: #efefef;
+ color: #999999; 
+ text-indent: 0em;
+ font-family: "Helvetica", sans-serif;
+ font-size: 12pt;
+ font-weight: bold;
+ text-align: left;
+ }
+ 
+/* Every alternate row */
+td.index-alt {
+ background: #ffffff;
+ color: #999999; 
+ text-indent: 0em;
+ font-family: "Helvetica", sans-serif;
+ font-size: 12pt;
+ font-weight: bold;
+ text-align: left;
+ }
+ 
+/* Sub-Chapters */
+td.indexb {
+ background: #ffffff;
+ color: #999999; 
+ text-indent: 0em;
+ font-family: "Helvetica", sans-serif;
+ font-size: 10pt;
+ font-weight: normal;
+ text-align: left;
+ }
+
+/* Describes the chapter (as seen in the History, Subject indexes, etc) */
+td.note {
+ background: transparent;
+ color: #444444; 
+ font-family: "Arial", sans-serif;
+ font-size: small;
+ text-align: justify;
+ line-height: 115%;
+ margin-left: 10%;
+ margin-right: 10%;
+ }
+
+ 
+/* Numbered List style */
+ul.disc { 
+ list-style-type: disc; 
+ font-size: 12pt;
+ text-align: left;
+ line-height: 130%;
+ margin-left: 7%;
+ margin-right: 14%;
+}
+
+ol.numbered { 
+ list-style-type: decimal; 
+ font-size: 12pt;
+ text-align: left;
+ line-height: 130%;
+ margin-left: 7%;
+ margin-right: 14%;
+}
+
+ 
+/*-----------------------------------*/
+/* Misc elements                     */
+/*-----------------------------------*/
+
+/* Book title for Chapter files */
+p.title { 
+ text-indent: 0em;
+ font-weight: bold;
+ text-align: center;
+ margin: 1%;
+ font-family: "Arial", sans-serif;
+ font-size: 12pt;  
+ }
+
+/* Document Bibliographical Informaiton */
+p.information {
+ color:        #330000;
+ text-indent:  0em;
+ font-size:    12pt;
+ line-height:  125%;
+ text-align:   left;
+
+ margin-right: 8%;
+
+ margin-left:  8%;
+ /* margin-left: 16%;  see note about David s web browser */
+ /* text-indent: -8%;  see note about David s web browser */
+}
+
+/* Signature */
+p.sig {  
+ text-indent: 0em; 
+ font-family: "Times New Roman", script, serif;
+ font-size: 12pt; 
+ font-weight: bold;
+ font-style: italic;
+ line-height: 125%;
+ text-align: left; 
+ margin-left: 8% 
+ }
+/* span Signature, 2004.06.10 */
+span.sig {
+ font-family: "Times New Roman", script, serif;
+ font-size: 12pt;
+ font-weight: bold;
+ font-style: italic;
+ line-height: 125%;
+}
+  
+sup {
+ font-family: "Arial", monospace;
+ font-size: x-small;
+ font-weight: normal;
+ }
+ 
+sub {
+ font-family: "Arial", monospace;
+ font-size: x-small;
+ font-weight: normal;
+ }
+ 
+/* Misc page note */
+p.pagenote {
+ background: transparent;
+ color: #330000; 
+ font-family: "Arial", sans-serif;
+ font-size: x-small;
+ text-align: center;
+ margin-left: 6%;
+ margin-right: 6%;
+ }
+
+p.pagenotea {
+ background: transparent;
+ color: #666666; 
+ font-family: "Arial", sans-serif;
+ font-size: small;
+ text-align: center;
+ margin-left: 6%;
+ margin-right: 6%;
+ }
+
+ 
+/* Misc page note (justified) */
+p.pagenoteb {
+ background: transparent;
+ color: #666666; 
+ font-family: "Arial", sans-serif;
+ font-size: small;
+ text-align: justify;
+ line-height: 115%;
+ margin-left: 10%;
+ margin-right: 10%;
+ }
+
+ /* Copy of pagenoteb for link from works-red shortcut in directory */
+p.pagenotec {
+ background: transparent;
+ color: #666666; 
+ font-family: "Arial", sans-serif;
+ font-size: small;
+ text-align: justify;
+ line-height: 115%;
+ margin-left: 10%;
+ margin-right: 10%;
+ }
+
+ 
+/* For blank spaces */
+p.skip { line-height: 75% }
+ 
+ 
+/*----------------------------------*/
+/* Page-ending elements             */
+/*----------------------------------*/
+
+/* Next Section-Chapter of work */
+p.next { 
+ text-indent: 0em;
+ font-family: "Arial", sans-serif;
+ font-size: 14pt;
+ font-weight: bold;
+ text-align: center;
+ line-height: 125%;
+ }
+ 
+/* Page bottom links */
+span.footer {  
+ font-weight: bold; font-family: "Arial", sans-serif; font-size: 12pt; 
+ }
+p.footer {  
+ text-indent: 0em; 
+ font-weight: bold;
+ font-family: "Arial", sans-serif;
+ font-size: 12pt; 
+ text-align: center; 
+ margin: 3%;
+ }
+
+/* The DIV canvas floats inside BODY. 2003.11.01 */
+div.canvas {
+    background:    #FFFFFF;
+    padding: 1em;
+    border-left:   1px solid; 
+    border-right:  1px solid; 
+    border-top:    1px solid; 
+    border-bottom: 1px solid; 
+}
+
+/* http://www.webreference.com/dlab/9704/backgr.html
+   Another important accessibility requirement is to always set all
+   four BODY colors (background, text, links, and visited links), because
+
+   any partial specification may result in a poor contrast between the
+   colors you specify and the default colors (which can be arbitrary,
+   specified by the user). 2003.11.01 */
+
+
+/* =====================================*/
+/* End of usable elements               */
+/* =====================================*/
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* The following three elements will probably be deleted for lack of use */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Basic Index with subindexes (so reduced line height) */
+ p.index-list { 
+ text-indent: 0em;
+ font-family: "Arial", sans-serif;
+ font-size: 12pt;
+ font-weight: bold;
+ text-align: left;
+ line-height: 100%;
+ margin-left: 9%;
+ margin-right: 9%;
+}
+
+/* Sub Index A*/
+ p.indexa { 
+ text-indent: 0em;
+ font-family: "Arial", sans-serif;
+ font-size: 12pt;
+ font-weight: normal;
+ text-align: left;
+ line-height: 125%;
+ margin-left: 12%;
+ margin-right: 6%;
+}
+
+/* Sub Index B*/
+ p.indexb { 
+ text-indent: 0em;
+ font-family: Geneva, sans-serif;
+ font-size: small;
+ font-weight: normal;
+ text-align: left;
+ line-height: 115%;
+ margin-left: 16%;
+ margin-right: 11%;
+}
+
+/* xxxxxxxxxxx */
+/*WASTELAND*/
+/* DO NOT use the elements below */
+/* xxxxxxxxxxx */
+
+/* OBSOLETE */
+span.note {
+ background: transparent;
+ color: #330000; 
+ font-size: 12pt;
+ font-weight: normal;
+ }
+
+p.equation {
+ text-indent: 0em;
+ font-family: "Courier", monospace;
+ font-size: 12pt;
+ font-style: normal;
+ text-align: center;
+ line-height: 125%;
+ margin-left: 6%;
+ margin-right: 6%;
+ } 
+ 
+p.skipb { line-height: 50% }
+
+
+/* http://www.w3.org/TR/REC-CSS2/visuren.html#absolute-positioning */
+/* 2005.02.10 */
+#header {
+ position: fixed;
+ width: 100%;
+ height: 15%;
+ top: 0;
+ right: 0;
+ bottom: auto;
+ left: 0;
+}
+#sidebar {
+ position: fixed;
+ width: 10em;
+ height: auto;
+ top: 15%;
+ right: auto;
+ bottom: 100px;
+ left: 0;
+}
+#main {
+ position: fixed;
+ width: auto;
+ height: auto;
+ top: 15%;
+ right: 0;
+ bottom: 100px;
+ left: 10em;
+}
+#footer {
+ position: fixed;
+ width: 100%;
+ height: 100px;
+ top: auto;
+ right: 0;
+ bottom: 0;
+ left: 0;
+}
+
+span.floatleft {
+ float: left;
+}
+span.floatmargins {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+span.footnote-as-sidebar {
+ display:      block; 
+ float:        right; 
+ width:        40%; 
+ clear:        none;
+ margin-top:     12px; 
+ margin-bottom:  12px;
+ margin-left:    24px;
+ margin-right:   0px;
+ padding-left:   12px;
+ padding-bottom: 12px;
+ /* padding-bottom: 12px; */
+ border-spacing: 8px;
+ border-left:   solid maroon;
+ border-bottom: solid red;
+
+ /* this from p.endnote: */
+ /* text-indent: 0em; */
+ font-size: 11pt;
+ line-height: 110%;
+ text-align: left;
+ /* margin-left: 9%; */
+ /* margin-right: 9%; */
+
+}
+
+span.footnote-as-sidebar-BACK {
+ position:   relative; 
+
+ /* See "font-size" above. */
+ /* top:        -24px; */
+ top:        -11px;
+
+ display:    block; 
+ text-align: right;
+}
+
+/* /www/mia/archive/css/table.css  */
+/* /www/mia/archive/pablo/1948/03/marshall1.htm */
+.updat {
+ text-align: right;
+ font-size: 9pt;
+ font-weight: normal;
+ margin-top: 24pt;
+ margin-right:12%;
+}
+
+
+
+/* Local Variables:        */
+/*  mode:c                 */
+/* End:                    */
+
+/* =====================================*/
+/* Adjustments for Mobile Devices       */
+/* =====================================*/
+
+@media (max-width: 480px) {
+  p { font-size: 12pt; margin-left: 1%; margin-right: 1%; margin-bottom: 4pt; margin-top: 4pt; line-height: 125%; }
+  p.indentb { margin-left: 6%; margin-right: 1%; }
+  p.quoteb { margin-left: 6%; margin-right: 1%; }
+  p.index { margin-left: 6%; margin-right: 1%; }
+  h1 { font-size: 18pt; margin-left: 1%; margin-right: 1%; }
+  h2 { font-size: 16pt; margin-left: 1%; margin-right: 1%; }
+  h3 { font-size: 14pt; margin-left: 1%; margin-right: 1%; }
+  h4 { font-size: 13pt; }
+  h5 { margin-left: 1%; }
+  h6 { margin-left: 1%; }
+  img { width: 150px; height: auto; }
+  img.auto {width: auto ; height: auto; }
+  blockquote {margin-left: 1%; }
+}
