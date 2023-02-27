@@ -501,7 +501,7 @@ p.transcriber {
   color: rgb(102, 102, 102);
   color: var(--p-transcriber--color);
   text-indent: 0;
-  font-family: "Arial"; sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 8pt;
   text-align: right;
   margin-left: 24%;
@@ -1047,7 +1047,6 @@ cite.in-quotation-marks { font-style: normal; }
 cite.in-quotation-marks:before { content: "\201C"; }
 cite.in-quotation-marks:after { content: "\201D"; }
 span:lang(de) { font-style: italic; }
-span:lang(fr) { }
 span:lang(la) { font-style: italic; }
 
 @media (max-width: 480px) {

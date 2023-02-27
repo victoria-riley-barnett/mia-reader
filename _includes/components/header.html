@@ -1,0 +1,20 @@
+<div id="main-header" class="main-header">
+    {% if site.search_enabled != false %}
+      {% include components/search_header.html %}
+    {% endif %}
+    <script src="https://kit.fontawesome.com/d3d95c7457.js" crossorigin="anonymous"></script>
+    <button class="btn js-toggle-light-mode" ><i class="fa-solid fa-lightbulb"></i></button>
+    <script>
+    const toggleLightMode = document.querySelector('.js-toggle-light-mode');
+
+    jtd.addEvent(toggleLightMode, 'click', function(){
+        if (jtd.getTheme() === 'light') {
+            jtd.setTheme('dark');
+        } 
+        else {
+            jtd.setTheme('light');
+  }
+});
+    </script>
+    {% include header_custom.html %}
+  </div>

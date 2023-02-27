@@ -19,20 +19,38 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Marxists Internet Archive Reader Mirror
+title: MIA Reader
 email: victoria.022@proton.me
 description: >- # this means to ignore newlines until "baseurl:"
   This is a mirror of the Marxists Internet Archive Reader. It is a collection of Marxist texts, including works by Marx, Engels, Lenin, Trotsky, Luxemburg, Plekhanov, Bukharin, Stalin, Mao, Gramsci, Fanon, and many others.
   This mirror specifically contains the English selected works for now.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+markdown: kramdown
 
+nav_links:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+
+favicon: /assets/img/favicon.ico
+
+nav_external_links:
+  - title: Marxists Internet Archive
+    url: https://www.marxists.org/
+    hide_icon: false
 
 # Build settings
 theme: just-the-docs
-
+color_scheme: dark
 plugins:
   - jekyll-feed
+
+gems:
+- jekyll-font-awesome-sass  
 
 include:
   - _pages
@@ -59,4 +77,3 @@ aux_links:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
->>>>>>> d99f427 (first commit)
