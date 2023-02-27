@@ -1,3 +1,3 @@
 #mia-reader
 
-A readability focused mirror for selected works of the marxists.org archive
+A mirror of selected works from the marxists.org archive created with a focus on web readability and reader customization.
