@@ -13,7 +13,7 @@ One great thing about Jekyll is that it hosts [Markdown](https://www.markdowngui
 
 
 ### A note on that wget command used for marxists.org downloads
-The ```-m``` flag tells wget to mirror the site, ```-p``` tells wget to download all the files it needs to display the site (ie, css and static images, though I've not yet incorporated these into mia-reader so feel free to submit without assets), ```-E``` tells wget to convert links to local files,```-w .5``` tells wget to wait half a second between requests, ```--limit-rate=500k``` tells wget to limit the download rate to 500k so the mia admins don't think we're DDoSing them, ```-r``` tells wget to recursively download the site, and ```--level=2``` tells it to only download two levels deep. The ```--level=2``` flag is important because the archive is structured in such a way that makes it quite easy to download the entire archive, but not structured in a way that makes it easy to download a singlular work. You can also make use of the ```--no-parent``` flag to prevent wget from crawling up the directory tree and downloading the entire archive. Appropriate use of ```--level and --no-parent``` will allow you to download a single work, or a single category of works, or a single author's works, etc.
+The ```-m``` flag tells wget to mirror the site, ```-p``` tells wget to download all the files it needs to display the site (ie, css and static images, though I've not yet incorporated these into mia-reader so feel free to submit without assets), ```-E``` tells wget to convert links to local files,```-w .5``` tells wget to wait half a second between requests, ```--limit-rate=500k``` tells wget to limit the download rate to 500k so the mia admins don't think we're DDoSing them, though I haven't had problems running without this command (which helps a lot with downloading any .pdfs in your archive section) ```-r``` tells wget to recursively download the site, and ```--level=2``` tells it to only download two levels deep. The ```--level=2``` flag is important because the archive is structured in such a way that makes it quite easy to download the entire archive, but not structured in a way that makes it easy to download a singlular work. You can also make use of the ```--no-parent``` flag to prevent wget from crawling up the directory tree and downloading the entire archive. Appropriate use of ```--level and --no-parent``` will allow you to download a single work, or a single category of works, or a single author's works, etc.
 
 ### Pandoc/bash command for converting .htm files to .md
 The following command will recursively search the current directory for .htm files and convert them to .md files. This is useful if you've downloaded a whole category of works from marxists.org and want to convert them all to markdown.
@@ -56,7 +56,7 @@ only use this if you have multiple pages to define the chapters/subpages of your
 - dont worry about:
     - permalink: (I'll set this up if needed)
 
-### Bash & ```sed``` script for adding front matter to .md files
+### Bash & ```sed`` script for adding front matter to .md files
 ```
 #!/usr/bin/env bash
 # This script is used to generate the front matter for fresh markdown files without any.
