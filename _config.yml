@@ -19,7 +19,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MIA Reader
+title: mia-reader
 email: victoria.022@proton.me
 description: >- # this means to ignore newlines until "baseurl:"
   This is a mirror of the Marxists Internet Archive Reader. It is a collection of Marxist texts, including works by Marx, Engels, Lenin, Trotsky, Luxemburg, Plekhanov, Bukharin, Stalin, Mao, Gramsci, Fanon, and many others.
