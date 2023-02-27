@@ -1,6 +1,6 @@
 # mia-reader todo
 - [ ] elevate Marx & Engels sw index
-- [ ] elevate selected authors index
+- [ ] elevate MIA Selected Authors index
 - [ ] lint markdown files and fix links
 - [ ] ensure pdf links are working and viewer is acceptable
 - [ ] fix images
