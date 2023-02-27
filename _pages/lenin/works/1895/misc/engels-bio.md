@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Engels Biography
-author: Lenin
-date: 1895
 parent: Marx & Engels Selected Works
 nav_order: 2
 ---
