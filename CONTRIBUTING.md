@@ -56,7 +56,7 @@ only use this if you have multiple pages to define the chapters/subpages of your
 - dont worry about:
     - permalink: (I'll set this up if needed)
 
-### Bash & ```sed`` script for adding front matter to .md files
+### Bash & ```sed``` script for adding front matter to .md files
 ```
 #!/usr/bin/env bash
 # This script is used to generate the front matter for fresh markdown files without any.
