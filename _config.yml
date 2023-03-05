@@ -47,9 +47,13 @@ nav_external_links:
 theme: just-the-docs
 color_scheme: dark
 
-gems:
-- jekyll-font-awesome-sass
-- jekyll-feed  
+plugins:
+  - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-font-awesome-sass
+  - jekyll-feed
 
 include:
   - _pages
