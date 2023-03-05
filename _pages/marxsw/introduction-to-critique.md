@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Introduction to Critique of Hegel’s Philosophy of Right
-permalink: /introduction-to-critique/
+permalink: /marxsw/introduction-to-critique/
 nav_order: 2
 parent: Marx Selected Works
 ---
