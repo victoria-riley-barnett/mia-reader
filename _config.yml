@@ -46,11 +46,10 @@ nav_external_links:
 # Build settings
 theme: just-the-docs
 color_scheme: dark
-plugins:
-  - jekyll-feed
 
 gems:
-- jekyll-font-awesome-sass  
+- jekyll-font-awesome-sass
+- jekyll-feed  
 
 include:
   - _pages
