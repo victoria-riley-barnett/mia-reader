@@ -2,7 +2,7 @@
 layout: page
 title: Contributing
 permalink: /contributing
-nav_order: 3
+nav_order: 4
 ---
 
 # How to contribute
